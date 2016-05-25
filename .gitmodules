@@ -1,0 +1,4 @@
+[submodule "keyboard/hhkb/tmk_core"]
+	path = keyboard/hhkb/tmk_core
+	url = https://github.com/kevinmost/tmk_cores.git
+	branch = master
