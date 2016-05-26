@@ -3,9 +3,9 @@
 # lol I don't know. This board is hasu's baby, I trust that he has TMK
 # working flawlessly on it... if it ain't broke...
 [submodule "keyboard/hhkb/tmk_core"]
-	path = keyboard/hhkb/tmk_core
-	url = https://github.com/kevinmost/tmk_cores.git
-	branch = master
+    path = keyboard/hhkb/tmk_core
+    url = https://github.com/kevinmost/tmk_cores.git
+    branch = master
 
 # Infinity
 #
@@ -13,9 +13,9 @@
 # and since the Kinetis branch has an older .mk file layout,
 # we need an older version of chibios.mk in TMK
 [submodule "keyboard/infinity_chibios/tmk_core"]
-	path = keyboard/infinity_chibios/tmk_core
-	url = https://github.com/kevinmost/tmk_cores.git
-	branch = masterWithEarlierChibiosMkAndKinetisChibios
+    path = keyboard/infinity_chibios/tmk_core
+    url = https://github.com/kevinmost/tmk_cores.git
+    branch = masterWithEarlierChibiosMkAndKinetisChibios
 
 # WhiteFox
 #
@@ -26,8 +26,8 @@
 # This is a little unorthodox but actually more modular, so I'm not complaining
 # Now we can specify the exact version we want for TMK + ChibiOS from here
 [submodule "keyboard/whitefox/tmk_core"]
-	path = keyboard/whitefox/tmk_core
-	url = https://github.com/tmk/tmk_core.git
+    path = keyboard/whitefox/tmk_core
+    url = https://github.com/tmk/tmk_core.git
     branch = master
 [submodule "keyboard/whitefox/chibios"]
 	path = keyboard/whitefox/chibios
