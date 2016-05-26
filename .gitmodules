@@ -32,6 +32,17 @@
 [submodule "keyboard/whitefox/chibios"]
 	path = keyboard/whitefox/chibios
 	url = https://github.com/ChibiOS/ChibiOS
+    branch = master
 [submodule "keyboard/whitefox/chibios-contrib"]
 	path = keyboard/whitefox/chibios-contrib
 	url = https://github.com/ChibiOS/ChibiOS-Contrib
+    branch = master
+
+# Planck
+#
+# The Planck uses QMK, which Jack officially supports, so we can just
+# point at his master branch
+[submodule "keyboard/planck/tmk_core"]
+	path = keyboard/planck/tmk_core
+	url = https://github.com/jackhumbert/qmk_firmware
+	branch = master
