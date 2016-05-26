@@ -1,0 +1,10 @@
+[submodule "tmk_core"]
+	path = tmk_core
+	url = https://github.com/tmk/tmk_core.git
+    branch = master
+[submodule "chibios"]
+	path = chibios
+	url = https://github.com/ChibiOS/ChibiOS
+[submodule "chibios-contrib"]
+	path = chibios-contrib
+	url = https://github.com/ChibiOS/ChibiOS-Contrib
