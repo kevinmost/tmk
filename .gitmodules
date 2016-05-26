@@ -6,3 +6,7 @@
 	path = keyboard/infinity_chibios/tmk_core
 	url = https://github.com/kevinmost/tmk_cores.git
 	branch = masterWithEarlierChibiosMkAndKinetisChibios
+[submodule "keyboard/whitefox/tmk_core"]
+	path = keyboard/whitefox/tmk_core
+	url = git@github.com:kevinmost/tmk_cores.git
+	branch = masterWithEarlierChibiosMkAndKinetisChibios
