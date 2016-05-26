@@ -5,4 +5,4 @@
 [submodule "keyboard/infinity_chibios/tmk_core"]
 	path = keyboard/infinity_chibios/tmk_core
 	url = https://github.com/kevinmost/tmk_cores.git
-	branch = masterWithKinetisChibiOS
+	branch = masterWithEarlierChibiosMkAndKinetisChibios
