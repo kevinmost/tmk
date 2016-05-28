@@ -31,10 +31,10 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `---------------------------------------------------------------'
      */
     [0] = KEYMAP( \
-         GRV,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,BSLS, GRV, INS,\
+         GRV,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,  NO,BSLS, INS,\
          TAB,   Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,      DEL,\
          FN1,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,NUHS, ENT,     PGUP,\
-        LSFT,NUBS,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP,PGDN,\
+        LSFT,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP,PGDN,\
         LCTL,LGUI,LALT,                FN0,          RALT,RGUI,RCTL,     LEFT,DOWN,RGHT \
     ),
 
@@ -42,13 +42,20 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,TRNS,TRNS,TRNS,\
         TRNS,TRNS,  UP,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
         TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,\
+        TRNS,  NO,MPRV,MPLY,MNXT,TRNS,TRNS,TRNS,MUTE, FN3, FN4,TRNS,TRNS,     TRNS,TRNS,\
         TRNS,TRNS,TRNS,                TRNS,          TRNS,TRNS,TRNS,     TRNS,TRNS,TRNS\
     ),
 };
 
 const uint16_t fn_actions[] = {
+    // SpaceFn
     [0] = ACTION_LAYER_TAP_KEY(1, KC_SPC),
 
+    // "supercharged vim" key (esc on tap, ctrl on hold)
     [1] = ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESC),
+
+    // Volume keys that also hold down super + shift,
+    // so that we get 1/4-step movement on OS X
+    [3] = ACTION_MODS_KEY(MOD_LGUI | MOD_LSFT, KC_VOLD),
+    [4] = ACTION_MODS_KEY(MOD_LGUI | MOD_LSFT, KC_VOLU),
 };
