@@ -31,10 +31,10 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `---------------------------------------------------------------'
      */
     [0] = KEYMAP( \
-         GRV,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,  NO,BSLS, INS,\
-         TAB,   Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,      DEL,\
-         FN1,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,NUHS, ENT,     PGUP,\
-        LSFT,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP,PGDN,\
+         GRV,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL,  NO,BSLS,HOME,\
+         TAB,   Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSPC,     PGUP,\
+         FN1,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT,NUHS, ENT,     PGDN,\
+        LSFT,  NO,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,RSFT,       UP, END,\
         LCTL,LGUI,LALT,                FN0,          RALT,RGUI,RCTL,     LEFT,DOWN,RGHT \
     ),
 
